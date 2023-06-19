@@ -18,7 +18,7 @@
   </button>
 </div>
 
-{#if menuOpen}
+{#if menuOpen === true}
   <header transition:fly={{ duration: 300, x: "100%", opacity: 1 }}>
     <nav>
       <ul class="main-nav">

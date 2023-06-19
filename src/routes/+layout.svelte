@@ -4,6 +4,7 @@
   import "../styles/global.css";
 
   let screenWidth: number;
+  $: console.log(screenWidth);
 </script>
 
 <svelte:head>
@@ -24,14 +25,17 @@
     name="twitter:description"
     content="This is my personal website and portofolio."
   />
-  <meta property="og:image" content="%svelte.assets%/panos.png" />
+  <!-- <meta property="og:image" content="%svelte.assets%/panos.png" /> -->
 </svelte:head>
 
 <svelte:window bind:innerWidth={screenWidth} />
-{#if screenWidth > 750}
-  <HeaderLarge />
-{:else}
+
+{#if screenWidth < 750}
   <HeaderSmall />
+{/if}
+
+{#if screenWidth >= 750}
+  <HeaderLarge />
 {/if}
 
 <slot />
