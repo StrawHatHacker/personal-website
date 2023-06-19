@@ -1,0 +1,36 @@
+:root {
+  font-size: 22px;
+  --color-main: #1d2882;
+
+  --section-width-desktop: 80%;
+  --section-width-mobile: 85%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-main);
+  color: white;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
