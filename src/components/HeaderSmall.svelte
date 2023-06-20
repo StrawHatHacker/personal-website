@@ -22,8 +22,8 @@
   <header transition:fly={{ duration: 300, x: "100%", opacity: 1 }}>
     <nav>
       <ul class="main-nav">
-        <li><a href="/works">Works</a></li>
-        <li><a href="/works">Personal</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/personal">Personal</a></li>
         <li><a href="open-source">Open Source</a></li>
       </ul>
       <button on:click={() => (menuOpen = false)} class="close-button">
@@ -81,7 +81,18 @@
   }
 
   .social-nav {
-    width: fit-content;
-    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    & a {
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 32px;
+      height: 32px;
+      padding: 0.2em;
+      border-radius: 50%;
+    }
   }
 </style>

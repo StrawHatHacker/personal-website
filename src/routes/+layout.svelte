@@ -4,7 +4,6 @@
   import "../styles/global.css";
 
   let screenWidth: number;
-  $: console.log(screenWidth);
 </script>
 
 <svelte:head>

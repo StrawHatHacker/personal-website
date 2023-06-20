@@ -11,20 +11,16 @@
           <img class="logo" src="/panos.png" width="60" height="60" alt="" />
         </a>
       </li>
-      <li><a href="/works">Works</a></li>
-      <li><a href="/works">Personal</a></li>
+      <li><a href="/projects">Projects</a></li>
+      <li><a href="/personal">Personal</a></li>
       <li><a href="open-source">Open Source</a></li>
     </ul>
-    <ul class="social-nav">
-      <li>
-        <a href="https://twitter.com/xSkillers3"><LogoTwitter size={32} /></a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/panos-ntais/">
-          <LogoLinkedin size={32} />
-        </a>
-      </li>
-    </ul>
+    <div class="social-nav">
+      <a href="https://twitter.com/xSkillers3"><LogoTwitter size={32} /></a>
+      <a href="https://www.linkedin.com/in/panos-ntais/">
+        <LogoLinkedin size={32} />
+      </a>
+    </div>
   </nav>
 </header>
 
@@ -55,9 +51,13 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-  }
 
-  @media screen and (max-width: 750px) {
-    
+    & a {
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 32px;
+      height: 32px;
+      padding: 0.2em;
+      border-radius: 50%;
+    }
   }
 </style>
