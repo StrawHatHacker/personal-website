@@ -1,7 +1,8 @@
 <script lang="ts">
+  import "../styles/global.css";
+  
   import HeaderLarge from "../components/HeaderLarge.svelte";
   import HeaderSmall from "../components/HeaderSmall.svelte";
-  import "../styles/global.css";
 
   let screenWidth: number;
 </script>
@@ -31,10 +32,10 @@
 
 {#if screenWidth < 750}
   <HeaderSmall />
-{/if}
-
-{#if screenWidth >= 750}
+{:else if screenWidth >= 750}
   <HeaderLarge />
+{:else}
+  <HeaderLarge hidden={true} />
 {/if}
 
 <slot />

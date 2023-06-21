@@ -32,6 +32,9 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    & > p {
+      text-wrap: balance;
+    }
   }
 
   #main-img {
@@ -70,6 +73,7 @@
     }
 
     h1 {
+      font-size: 4rem;
       transform-origin: center;
     }
 

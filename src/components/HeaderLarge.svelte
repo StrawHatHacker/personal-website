@@ -1,9 +1,10 @@
-<script>
+<script lang="ts">
   import LogoTwitter from "carbon-icons-svelte/lib/LogoTwitter.svelte";
   import LogoLinkedin from "carbon-icons-svelte/lib/LogoLinkedin.svelte";
+  export let hidden: boolean = false;
 </script>
 
-<header>
+<header class:hidden>
   <nav>
     <ul class="main-nav">
       <li>
@@ -24,11 +25,17 @@
   </nav>
 </header>
 
+<div
+  class:hidden={!hidden}
+  style="width:100%;height:80px;margin: 1rem auto 0 auto;"
+/>
+
 <style>
   header {
     width: var(--section-width-desktop);
     margin: 1rem auto 0 auto;
     font-weight: 600;
+    height: 80px;
   }
 
   nav {
