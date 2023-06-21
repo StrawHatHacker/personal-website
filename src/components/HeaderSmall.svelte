@@ -22,9 +22,9 @@
   <header transition:fly={{ duration: 300, x: "100%", opacity: 1 }}>
     <nav>
       <ul class="main-nav">
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/personal">Personal</a></li>
-        <li><a href="open-source">Open Source</a></li>
+        <li><a href="/">Projects</a></li>
+        <li><a href="/">Personal</a></li>
+        <li><a href="/">Open Source</a></li>
       </ul>
       <button on:click={() => (menuOpen = false)} class="close-button">
         <Close size={32} />
