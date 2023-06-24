@@ -10,7 +10,7 @@
 
 <div id="mock-header">
   <a href="/">
-    <img class="logo" src="/panos.png" width="60" height="60" alt="" />
+    <img class="logo" src="/panos.png" loading="lazy" width="60" height="60" alt="" />
   </a>
 
   <button on:click={() => (menuOpen = true)}>
@@ -23,8 +23,8 @@
     <nav>
       <ul class="main-nav">
         <li><a href="/">Projects</a></li>
-        <li><a href="/">Personal</a></li>
         <li><a href="/">Open Source</a></li>
+        <li><a href="/">Contact</a></li>
       </ul>
       <button on:click={() => (menuOpen = false)} class="close-button">
         <Close size={32} />

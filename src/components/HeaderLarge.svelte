@@ -9,12 +9,12 @@
     <ul class="main-nav">
       <li>
         <a href="/">
-          <img class="logo" src="/panos.png" width="60" height="60" alt="" />
+          <img class="logo" src="/panos.png" loading="lazy" width="60" height="60" alt="" />
         </a>
       </li>
       <li><a href="/">Projects</a></li>
-      <li><a href="/">Personal</a></li>
       <li><a href="/">Open Source</a></li>
+      <li><a href="/">Contact</a></li>
     </ul>
     <div class="social-nav">
       <a href="https://twitter.com/xSkillers3"><LogoTwitter size={32} /></a>
