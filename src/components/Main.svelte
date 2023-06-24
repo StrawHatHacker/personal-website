@@ -1,7 +1,7 @@
-<section aria-labelledby="">
+<section aria-labelledby="name">
   <main>
     <div id="main-text">
-      <h1>
+      <h1 id="name">
         <span id="name">Panos</span>
         <span id="surname">Ntais</span>
       </h1>
@@ -10,7 +10,12 @@
       </p>
     </div>
 
-    <img id="main-img" src="/developer.svg" width="900" alt="" />
+    <img
+      id="main-img"
+      src="/developer.svg"
+      width="900"
+      alt="A developer thinking with their laptop open"
+    />
   </main>
 </section>
 
@@ -50,6 +55,18 @@
     display: flex;
     flex-direction: column;
     margin: 0;
+    position: relative;
+
+    &::after {
+      content: "he/him";
+      font-size: 0.7rem;
+      scale: 0.8 1;
+      font-weight: normal;
+      transform-origin: 0;
+      position: absolute;
+      bottom: 0.8em;
+      left: 22.5em;
+    }
   }
 
   #surname {
@@ -72,6 +89,12 @@
     h1 {
       font-size: 4rem;
       transform-origin: center;
+    }
+
+    h1::after {
+      bottom: -1.2em;
+      left: 50%;
+      translate: -50% 0;
     }
 
     #main-img {

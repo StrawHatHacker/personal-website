@@ -1,7 +1,8 @@
 <script lang="ts">
   import LogoTwitter from "carbon-icons-svelte/lib/LogoTwitter.svelte";
   import LogoLinkedin from "carbon-icons-svelte/lib/LogoLinkedin.svelte";
-  export let hidden: boolean = false;
+
+  export let hidden = false;
 </script>
 
 <header class:hidden>
@@ -9,7 +10,14 @@
     <ul class="main-nav">
       <li>
         <a href="/">
-          <img class="logo" src="/panos.png" loading="lazy" width="60" height="60" alt="" />
+          <img
+            class="logo"
+            src="/panos.png"
+            loading="lazy"
+            width="60"
+            height="60"
+            alt=""
+          />
         </a>
       </li>
       <li><a href="/">Projects</a></li>
