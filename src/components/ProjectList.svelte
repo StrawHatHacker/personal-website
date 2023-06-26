@@ -14,25 +14,25 @@
       <span>REST API</span>
       <h3 style="--c:#1761e1">OtakuGIFs</h3>
       <p>Free REST API that serves animated GIFs as reactions.</p>
-      <a href="/projects/otakugifs">Learn More</a>
+      <a href="/">Learn More</a>
     </li>
     <li>
       <span>Website</span>
       <h3 style="--c:#a63dcf">Kouhai</h3>
       <p>Utilities for every day use.</p>
-      <a href="/projects/kouhai">Learn More</a>
+      <a href="/">Learn More</a>
     </li>
     <li>
       <span>Chatbot</span>
       <h3 style="--c:#e05477">Shiro</h3>
       <p>Multipurpose chatbot for Discord.</p>
-      <a href="/projects/shiro">Learn More</a>
+      <a href="/">Learn More</a>
     </li>
     <li>
       <span>Bash Scripts</span>
       <h3 style="--c:#89e051">UsefulScripts</h3>
       <p>Free REST API that serves animated GIFs as reactions.</p>
-      <a href="/projects/usefulscripts">Learn More</a>
+      <a href="/">Learn More</a>
     </li>
   </ul>
 </section>
