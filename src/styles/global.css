@@ -4,6 +4,11 @@
 
   --section-width-desktop: 80%;
   --section-width-mobile: 85%;
+
+  --otakugifs-color: #1761e1;
+  --kouhai-color: #a63dcf;
+  --shiro-color: #e05477;
+  --usefulscripts-color: #89e051;
 }
 
 body {

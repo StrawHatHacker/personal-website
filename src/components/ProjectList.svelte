@@ -1,4 +1,6 @@
 <script lang="ts">
+  import MainButtonLink from "./Buttons/MainButtonLink.svelte";
+
   export let thisElement: HTMLElement;
 </script>
 
@@ -10,32 +12,36 @@
   <h2 id="projects-section-title" class="hidden">Projects</h2>
 
   <ul class="project-container">
-    <li>
+    <li class="project-item">
       <span>REST API</span>
-      <h3 style="--c:#1761e1">OtakuGIFs</h3>
+      <h3 style="--c: var(--otakugifs-color)">OtakuGIFs</h3>
       <p>Free REST API that serves animated GIFs as reactions.</p>
-      <a href="/">Learn More</a>
+      <MainButtonLink href="/" text="Learn More" />
     </li>
-    <li>
+    <li class="project-item">
       <span>Website</span>
-      <h3 style="--c:#a63dcf">Kouhai</h3>
+      <h3 style="--c:var(--kouhai-color)">Kouhai</h3>
       <p>Utilities for every day use.</p>
-      <a href="/">Learn More</a>
+      <MainButtonLink href="/" text="Learn More" />
     </li>
-    <li>
+    <li class="project-item">
       <span>Chatbot</span>
-      <h3 style="--c:#e05477">Shiro</h3>
+      <h3 style="--c:var(--shiro-color)">Shiro</h3>
       <p>Multipurpose chatbot for Discord.</p>
-      <a href="/">Learn More</a>
+      <MainButtonLink href="/" text="Learn More" />
     </li>
-    <li>
+    <li class="project-item">
       <span>Bash Scripts</span>
-      <h3 style="--c:#89e051">UsefulScripts</h3>
+      <h3 style="--c:var(--usefulscripts-color)">UsefulScripts</h3>
       <p>Free REST API that serves animated GIFs as reactions.</p>
-      <a href="/">Learn More</a>
+      <MainButtonLink href="/" text="Learn More" />
     </li>
   </ul>
 </section>
+
+<div class="see-all-projects-btn">
+  <MainButtonLink href="/" text="VIEW ALL" size="lg" />
+</div>
 
 <style>
   section#projects {
@@ -44,14 +50,14 @@
     scroll-margin: 20px;
   }
 
-  .project-container {
+  ul.project-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 3rem;
   }
 
-  li {
+  li.project-item {
     border: 2px solid white;
     border-radius: 10px;
     padding: 2rem;
@@ -74,14 +80,13 @@
     }
 
     & > a {
-      border: 2px solid rgb(255, 255, 255);
-      border-radius: 6px;
-      width: fit-content;
-      padding: 0.4em 0.5em;
-      font-size: 0.9em;
       margin-top: auto;
-      cursor: pointer;
     }
+  }
+
+  .see-all-projects-btn {
+    margin: 70px auto 0 auto;
+    width: fit-content;
   }
 
   @media screen and (max-width: 500px) {
@@ -89,11 +94,12 @@
       width: var(--section-width-mobile);
       font-size: 0.9em;
     }
-    .project-container {
+
+    ul.project-container {
       gap: 1.2rem;
     }
 
-    li {
+    li.project-item {
       padding: 1.5rem;
     }
   }

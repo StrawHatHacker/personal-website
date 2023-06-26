@@ -1,6 +1,7 @@
 <script lang="ts">
   import LogoTwitter from "carbon-icons-svelte/lib/LogoTwitter.svelte";
   import LogoLinkedin from "carbon-icons-svelte/lib/LogoLinkedin.svelte";
+  import MainLink from "./Buttons/MainLink.svelte";
 
   export let hidden = false;
 </script>
@@ -20,9 +21,9 @@
           />
         </a>
       </li>
-      <li><a href="/">Projects</a></li>
-      <li><a href="/">Open Source</a></li>
-      <li><a href="/">Contact</a></li>
+      <li><MainLink href="/" text="Projects" /></li>
+      <li><MainLink href="/" text="Open Source" /></li>
+      <li><MainLink href="/" text="Contact" /></li>
     </ul>
     <div class="social-nav">
       <a href="https://twitter.com/xSkillers3"><LogoTwitter size={32} /></a>
@@ -68,11 +69,21 @@
     gap: 1rem;
 
     & a {
-      background-color: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.1);
       width: 32px;
       height: 32px;
-      padding: 0.2em;
+      padding: 0.25em;
       border-radius: 50%;
+      transition: all 0.2s ease;
+
+      &:focus-visible {
+        outline: 2px solid white;
+      }
+
+      &:hover {
+        opacity: 0.8;
+        background: rgba(255, 255, 255, 0.2);
+      }
     }
   }
 </style>
