@@ -81,6 +81,7 @@
 
   .close-button {
     align-self: self-end;
+    margin-right: 1rem;
   }
 
   .logo {
