@@ -15,16 +15,16 @@
   <section class="introduction" aria-labelledby="introduction-title">
     <h3 id="introduction-title" class="hidden">Introduction</h3>
     <p>
-      Panos is a self-taught & self-motivated , web developer and designer with
+      A self-taught & self-motivated , web developer and designer with
       extensive knowledge of the front-end world.
     </p>
     <p>
-      He has worked with popular front-end frameworks such as Next.js and
+      Worked with popular front-end frameworks such as Next.js and
       SvelteKit but also with back-end libraries such as Express.js and
       Fastify.js.
     </p>
     <p>
-      He has explored many other technologies such as Go, chatbots, and MongoDB.
+      Explored many other technologies such as Go, chatbots, and MongoDB.
     </p>
   </section>
   <section class="key-points" aria-labelledby="key-points-title">

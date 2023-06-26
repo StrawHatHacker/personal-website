@@ -1,6 +1,8 @@
 :root {
   font-size: 20px;
   --color-main: #131313;
+  --color-secondary: #202020;
+  --color-gray: #898989;
 
   --section-width-desktop: 80%;
   --section-width-mobile: 85%;
