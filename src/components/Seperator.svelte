@@ -1,7 +1,8 @@
 <script lang="ts">
+  import type { SvelteComponent } from "svelte";
   import ArrowDown from "carbon-icons-svelte/lib/ArrowDown.svelte";
 
-  export let node: HTMLElement;
+  export let node: SvelteComponent | HTMLElement;
 </script>
 
 <div class="seperator">
