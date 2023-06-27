@@ -32,7 +32,7 @@
         </div>
         <div class="button-container">
           <MainButtonLink
-            href={"/projects/" + project.name.toLowerCase()}
+            href={"/projects/"}
             text="Learn More"
           />
           {#if project.url}
