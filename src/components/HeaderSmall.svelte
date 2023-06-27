@@ -71,17 +71,13 @@
 <style>
   header {
     width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background: var(--color-secondary);
     position: fixed;
     z-index: 1;
     top: 0;
     right: -0%;
-  }
-
-  .close-button {
-    align-self: self-end;
-    margin-right: 1rem;
   }
 
   .logo {
@@ -97,15 +93,14 @@
   }
 
   nav {
-    margin: 1.5rem 0;
+    margin: 1.5rem 1rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     flex-direction: column;
   }
 
   .main-nav {
-    margin-top: 20px;
+    margin: 20px 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -119,6 +114,10 @@
       border: 2px solid white;
       border-radius: 10px;
     }
+  }
+
+  .close-button {
+    align-self: self-end;
   }
 
   .social-nav {

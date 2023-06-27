@@ -1,5 +1,5 @@
 <script lang="ts">
-  import MainButtonLink from "./Buttons/MainButtonLink.svelte";
+  import MainButtonLink from "../Buttons/MainButtonLink.svelte";
 
   export let thisElement: HTMLElement;
 </script>
@@ -85,7 +85,7 @@
   }
 
   .see-all-projects-btn {
-    margin: 70px auto 0 auto;
+    margin: 70px auto;
     width: fit-content;
   }
 
