@@ -43,7 +43,8 @@ button {
   cursor: pointer;
 }
 
-h3 {
+h3,
+h4 {
   margin: 0;
 }
 
@@ -53,4 +54,8 @@ p {
 
 .hidden {
   display: none;
+}
+
+.round {
+  border-radius: 50%;
 }

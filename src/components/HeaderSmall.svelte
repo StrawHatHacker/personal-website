@@ -36,7 +36,7 @@
       </button>
       <ul class="main-nav">
         <li>
-          <a href="/">
+          <a href="/projects">
             <Screen size={32} />
             <div>Projects</div>
           </a>

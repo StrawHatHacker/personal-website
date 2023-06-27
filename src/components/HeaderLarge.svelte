@@ -21,7 +21,7 @@
           />
         </a>
       </li>
-      <li><MainLink href="/" text="Projects" /></li>
+      <li><MainLink href="/projects" text="Projects" /></li>
       <li><MainLink href="/" text="Open Source" /></li>
       <li><MainLink href="/" text="Contact" /></li>
     </ul>

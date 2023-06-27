@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="300mm"
+   height="300mm"
+   viewBox="0 0 300 300"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2" />
+  <g
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:254px;line-height:1.65;font-family:BubbleGum;-inkscape-font-specification:BubbleGum;letter-spacing:0.00529167px;white-space:pre;inline-size:306.978;fill:#0c59e0;fill-opacity:1;stroke:#46adec;stroke-width:8.76067815;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="86.178574"
+       y="81.64286"
+       id="text1404"
+       transform="matrix(0.93628231,0,0,0.89063079,-5.6051686,163.36057)"><tspan
+         x="86.178574"
+         y="81.64286"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:254px;font-family:BubbleGum;-inkscape-font-specification:BubbleGum;fill:#0c59e0;fill-opacity:1;stroke:#46adec;stroke-width:8.76068;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">O</tspan></tspan></text>
+    <ellipse
+       style="fill:none;fill-rule:evenodd;stroke:#0c59e0;stroke-width:14.8262;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1406"
+       cx="150.05655"
+       cy="150.32675"
+       rx="142.5325"
+       ry="142.52548" />
+  </g>
+</svg>

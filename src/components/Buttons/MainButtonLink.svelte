@@ -2,10 +2,17 @@
   export let href: string;
   export let text: string;
   export let size: "sm" | "md" | "lg" = "sm";
+  export let newTab = false;
 </script>
 
-<a {href} class:md={size === "md"} class:lg={size === "lg"}>
+<a
+  {href}
+  class:md={size === "md"}
+  class:lg={size === "lg"}
+  target={newTab ? "_blank" : "_self"}
+>
   {text}
+  <slot />
 </a>
 
 <style>
@@ -16,6 +23,10 @@
     padding: 0.5rem 0.7rem;
     font-size: 0.9rem;
     transition: opacity 0.3s ease;
+    letter-spacing: 0.6px;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
 
     &:hover {
       opacity: 0.6;

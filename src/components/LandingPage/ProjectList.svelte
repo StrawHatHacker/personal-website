@@ -40,7 +40,7 @@
 </section>
 
 <div class="see-all-projects-btn">
-  <MainButtonLink href="/" text="VIEW ALL" size="lg" />
+  <MainButtonLink href="/projects" text="VIEW ALL" size="lg" />
 </div>
 
 <style>
