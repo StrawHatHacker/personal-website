@@ -47,4 +47,21 @@
     padding: 0.7rem 1.5rem;
     font-size: 1.5rem;
   }
+
+  @media screen and (max-width: 500px) {
+    a {
+      padding: 0.4rem 0.6rem;
+      font-size: 0.8rem;
+    }
+
+    .md {
+      padding: 0.5rem 0.8rem;
+      font-size: 1rem;
+    }
+
+    .lg {
+      padding: 0.6rem 1.3rem;
+      font-size: 1.2rem;
+    }
+  }
 </style>

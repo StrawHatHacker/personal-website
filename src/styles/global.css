@@ -53,9 +53,10 @@ p {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .round {
   border-radius: 50%;
+  border: 2px solid white;
 }
