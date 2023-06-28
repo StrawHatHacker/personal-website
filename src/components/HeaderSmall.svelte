@@ -34,36 +34,28 @@
       <button on:click={() => (menuOpen = false)} class="close-button">
         <Close size={32} />
       </button>
-      <ul class="main-nav">
-        <li>
-          <a href="/projects">
-            <Screen size={32} />
-            <div>Projects</div>
+      <div class="main-nav">
+        <a href="/projects">
+          <Screen size={32} />
+          <div>Projects</div>
+        </a>
+        <a href="/">
+          <Idea size={32} />
+          <div>Open Source</div>
+        </a>
+        <a href="/">
+          <MobileAudio size={32} />
+          <div>Contact</div>
+        </a>
+        <div class="social-nav">
+          <a href="https://twitter.com/xSkillers3">
+            <LogoTwitter size={32} />
           </a>
-        </li>
-        <li>
-          <a href="/">
-            <Idea size={32} />
-            <div>Open Source</div>
+          <a href="https://www.linkedin.com/in/panos-ntais/">
+            <LogoLinkedin size={32} />
           </a>
-        </li>
-        <li>
-          <a href="/">
-            <MobileAudio size={32} />
-            <div>Contact</div>
-          </a>
-        </li>
-        <li>
-          <div class="social-nav">
-            <a href="https://twitter.com/xSkillers3">
-              <LogoTwitter size={32} />
-            </a>
-            <a href="https://www.linkedin.com/in/panos-ntais/">
-              <LogoLinkedin size={32} />
-            </a>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </nav>
   </header>
 {/if}
@@ -106,7 +98,7 @@
     flex-wrap: wrap;
     gap: 1rem;
 
-    & > li {
+    & > * {
       width: 90px;
       height: 90px;
       flex: 0 1 auto;
