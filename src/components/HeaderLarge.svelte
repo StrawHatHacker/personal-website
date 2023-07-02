@@ -75,6 +75,7 @@
       padding: 0.25em;
       border-radius: 50%;
       transition: all 0.2s ease;
+      outline-offset: 0;
 
       &:focus-visible {
         outline: 2px solid white;

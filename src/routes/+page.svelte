@@ -3,7 +3,6 @@
   import Main from "../components/LandingPage/Main.svelte";
   import Seperator from "../components/Seperator.svelte";
   import ProjectList from "../components/LandingPage/ProjectList.svelte";
-  import Footer from "../components/LandingPage/Footer.svelte";
 
   let introductionNode: HTMLElement;
   let projectsNode: HTMLElement;
@@ -18,5 +17,3 @@
 <Seperator node={projectsNode} />
 
 <ProjectList bind:thisElement={projectsNode} />
-
-<Footer />

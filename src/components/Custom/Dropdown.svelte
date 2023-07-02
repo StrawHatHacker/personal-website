@@ -60,6 +60,17 @@
     justify-content: center;
     align-items: center;
     gap: 0.5em;
+    outline: 2px solid transparent;
+    outline-offset: -0.4em;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: var(--color-secondary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid white;
+    }
   }
 
   .dropdown {

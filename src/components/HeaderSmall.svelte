@@ -12,7 +12,7 @@
 </script>
 
 <div id="mock-header">
-  <a href="/">
+  <a href="/" class="logo-anchor">
     <img
       class="logo"
       src="/panos.png"
@@ -23,7 +23,7 @@
     />
   </a>
 
-  <button on:click={() => (menuOpen = true)}>
+  <button on:click={() => (menuOpen = true)} class="open-button">
     <Menu size={32} />
   </button>
 </div>
@@ -35,15 +35,15 @@
         <Close size={32} />
       </button>
       <div class="main-nav">
-        <a href="/projects">
+        <a href="/projects" on:click={() => (menuOpen = false)}>
           <Screen size={32} />
           <div>Projects</div>
         </a>
-        <a href="/">
+        <a href="/" on:click={() => (menuOpen = false)}>
           <Idea size={32} />
           <div>Open Source</div>
         </a>
-        <a href="/">
+        <a href="/" on:click={() => (menuOpen = false)}>
           <MobileAudio size={32} />
           <div>Contact</div>
         </a>
@@ -72,20 +72,30 @@
     right: -0%;
   }
 
+  .logo-anchor {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+
+    &:focus-visible {
+      outline: 2px solid white;
+    }
+  }
+
   .logo {
     border-radius: 50%;
   }
 
   #mock-header {
     z-index: 0;
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem 2rem 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   nav {
-    margin: 1.5rem 1rem;
+    margin: 1.5rem 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -105,11 +115,52 @@
       padding: 1rem;
       border: 2px solid white;
       border-radius: 10px;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: var(--color-main);
+      }
+
+      &:focus-visible {
+        outline: 2px solid white;
+        outline-offset: -10px;
+      }
+
+      &:active {
+        background: var(--color-gray);
+      }
     }
   }
 
   .close-button {
     align-self: self-end;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+
+    &:hover {
+      background-color: var(--color-main);
+    }
+
+    &:focus-visible {
+      outline: 2px solid white;
+    }
+  }
+
+  .open-button {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    &:focus-visible {
+      outline: 2px solid white;
+    }
   }
 
   .social-nav {
@@ -125,6 +176,8 @@
       padding: 0.25em;
       border-radius: 50%;
       transition: all 0.2s ease;
+      outline: 2px solid transparent;
+      outline-offset: 0;
 
       &:focus-visible {
         outline: 2px solid white;

@@ -1,8 +1,9 @@
 <script lang="ts">
   import "../styles/global.css";
-  
+
   import HeaderLarge from "../components/HeaderLarge.svelte";
   import HeaderSmall from "../components/HeaderSmall.svelte";
+  import Footer from "../components/LandingPage/Footer.svelte";
 
   let screenWidth: number;
 </script>
@@ -39,3 +40,5 @@
 {/if}
 
 <slot />
+
+<Footer />
