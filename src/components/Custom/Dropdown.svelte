@@ -25,25 +25,27 @@
     <span>{text}</span>
     <ChevronDown size={20} />
   </button>
-  <ul
-    class="dropdown"
-    class:hidden={!open}
-    use:clickoutside
-    on:clickoutside={() => (open = false)}
-  >
-    {#each values as value}
-      <li>
-        <button on:click={() => valueClick(value)}>
-          <span>{value}</span>
-          {#if checkedValues.has(value)}
-            <div transition:fade={{ duration: 100 }}>
-              <Checkmark size={16} />
-            </div>
-          {/if}
-        </button>
-      </li>
-    {/each}
-  </ul>
+  {#if open}
+    <ul
+      transition:fade={{ duration: 100 }}
+      class="dropdown"
+      use:clickoutside
+      on:clickoutside={() => (open = false)}
+    >
+      {#each values as value}
+        <li>
+          <button on:click={() => valueClick(value)}>
+            <span>{value}</span>
+            {#if checkedValues.has(value)}
+              <div transition:fade={{ duration: 100 }}>
+                <Checkmark size={16} />
+              </div>
+            {/if}
+          </button>
+        </li>
+      {/each}
+    </ul>
+  {/if}
 </div>
 
 <style>

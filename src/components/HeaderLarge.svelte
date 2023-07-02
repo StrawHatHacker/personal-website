@@ -10,7 +10,7 @@
   <nav>
     <ul class="main-nav">
       <li>
-        <a href="/">
+        <a href="/" class="logo-anchor">
           <img
             class="logo"
             src="/panos.png"
@@ -53,6 +53,12 @@
     align-content: center;
   }
 
+  .logo-anchor {
+    &:focus-visible {
+      outline: 2px solid white;
+    }
+  }
+
   .logo {
     border-radius: 50%;
   }
@@ -75,6 +81,7 @@
       padding: 0.25em;
       border-radius: 50%;
       transition: all 0.2s ease;
+      outline: 2px solid transparent;
       outline-offset: 0;
 
       &:focus-visible {
