@@ -22,8 +22,8 @@
         </a>
       </li>
       <li><MainLink href="/projects" text="Projects" /></li>
-      <li><MainLink href="/" text="Open Source" /></li>
-      <li><MainLink href="/" text="Contact" /></li>
+      <li><MainLink href="/" text="Blog" /></li>
+      <li><MainLink href="/" text="Contact me" /></li>
     </ul>
     <div class="social-nav">
       <a href="https://twitter.com/xSkillers3"><LogoTwitter size={32} /></a>

@@ -41,11 +41,11 @@
         </a>
         <a href="/" on:click={() => (menuOpen = false)}>
           <Idea size={32} />
-          <div>Open Source</div>
+          <div>Blog</div>
         </a>
         <a href="/" on:click={() => (menuOpen = false)}>
           <MobileAudio size={32} />
-          <div>Contact</div>
+          <div>Contact me</div>
         </a>
         <div class="social-nav">
           <a href="https://twitter.com/xSkillers3">

@@ -57,7 +57,7 @@
     min-width: 100px;
     border: 2px solid white;
     border-radius: 6px;
-    padding: 0.5em;
+    padding: 0.3em;
     display: flex;
     justify-content: center;
     align-items: center;

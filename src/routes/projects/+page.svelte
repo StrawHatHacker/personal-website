@@ -3,6 +3,7 @@
   import ArrowUpRight from "carbon-icons-svelte/lib/ArrowUpRight.svelte";
   import Dropdown from "../../components/Custom/Dropdown.svelte";
   import type { PageData } from "./$types";
+  import TechnologyList from "../../components/TechnologyList.svelte";
 
   export let data: PageData;
   let filteredProjects = data.projects;
@@ -49,20 +50,16 @@
             height="40"
           />
           <h3 class="project-title">
-            {project.name} <small>{project.type}</small>
+            {project.name} <small>{project.type} | {project.dateCreated}</small>
           </h3>
         </div>
         <p class="project-description">{project.description}</p>
-        <div>
-          <h4>Technologies</h4>
-          <ul class="technology-list">
-            {#each project.technologies as technology}
-              <li>{technology}</li>
-            {/each}
-          </ul>
-        </div>
+        <TechnologyList {project} />
         <div class="button-container">
-          <MainButtonLink href={"/projects/"} text="Learn More" />
+          <MainButtonLink
+            href={"/projects/" + project.name.toLowerCase()}
+            text="Learn More"
+          />
           {#if project.url}
             <MainButtonLink href={project.url} text="Visit Site" newTab>
               <ArrowUpRight size={16} />
@@ -84,6 +81,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    & > h2 {
+      margin: 1rem 0;
+    }
   }
 
   .project-list {
@@ -109,7 +110,7 @@
     & > h3.project-title {
       color: var(--c);
       & > small {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
         align-self: flex-end;
         color: white;
         font-weight: 300;
@@ -122,24 +123,10 @@
     max-width: 60ch;
   }
 
-  .technology-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    color: var(--color-gray);
-    font-size: 0.7rem;
-    margin: 0.5rem 0;
-
-    & > li {
-      background: var(--color-secondary);
-      padding: 0.5rem;
-      border-radius: 6px;
-    }
-  }
-
   .button-container {
     display: flex;
     gap: 1rem;
+    margin-top: 0.5rem;
   }
 
   @media screen and (max-width: 500px) {
@@ -153,10 +140,6 @@
 
     .project-description {
       font-size: 0.8rem;
-    }
-
-    .technology-list {
-      font-size: 0.6rem;
     }
 
     .button-container {

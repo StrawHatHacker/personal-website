@@ -3,6 +3,7 @@
   export let text: string;
   export let size: "sm" | "md" | "lg" = "sm";
   export let newTab = false;
+  export let reverse = false;
 </script>
 
 <a
@@ -11,8 +12,13 @@
   class:lg={size === "lg"}
   target={newTab ? "_blank" : "_self"}
 >
-  {text}
-  <slot />
+  {#if reverse}
+    <slot />
+    {text}
+  {:else}
+    {text}
+    <slot />
+  {/if}
 </a>
 
 <style>
