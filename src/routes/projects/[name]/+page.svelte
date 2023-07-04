@@ -32,7 +32,7 @@
         <p>{@html project.longDescription}</p>
         <p>
           If you want to learn even more,
-          <a href="/contact" class="contact-anchor">contact me</a>
+          <a href="/" class="contact-anchor">contact me</a>
           !
         </p>
       </div>
