@@ -77,8 +77,8 @@
 
   .dropdown {
     position: absolute;
-    font-size: 0.8rem;
-    top: 53px;
+    font-size: 0.7rem;
+    top: 50px;
     left: 0;
     width: 100%;
     box-sizing: border-box;

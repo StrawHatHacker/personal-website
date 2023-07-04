@@ -74,12 +74,13 @@
     & > div {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: 0 1rem;
 
       & > h2 {
         margin: 1rem 0;
         color: var(--c);
         width: 100%;
+
         & > small {
           font-size: 0.65rem;
           align-self: flex-end;
@@ -106,5 +107,24 @@
     justify-content: center;
     align-items: center;
     gap: 0.3em;
+  }
+
+  @media screen and (max-width: 500px) {
+    section {
+      width: var(--section-width-mobile);
+      font-size: 0.8rem;
+    }
+    .article-heading > div {
+      gap: 0;
+    }
+
+    .article-heading > div > h2 {
+      margin: 0.5rem;
+      width: 70%;
+    }
+
+    .article-heading > div > h2 > small {
+      display: block;
+    }
   }
 </style>

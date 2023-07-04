@@ -10,7 +10,7 @@
 <style>
   footer {
     width: 99%;
-    margin: 3rem auto 0 auto;
+    margin: 3rem auto 2px auto;
     display: flex;
     justify-content: space-between;
     font-size: 0.7em;
@@ -20,6 +20,7 @@
 
   @media screen and (max-width: 700px) {
     footer {
+      margin: 1rem auto 2px auto;
       width: var(--section-width-mobile);
     }
   }
