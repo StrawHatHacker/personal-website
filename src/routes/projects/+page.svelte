@@ -1,9 +1,10 @@
 <script lang="ts">
   import MainButtonLink from "../../components/Buttons/MainButtonLink.svelte";
   import ArrowUpRight from "carbon-icons-svelte/lib/ArrowUpRight.svelte";
+  import ScrollToTop from "../../components/Custom/ScrollToTop.svelte";
+  import TechnologyList from "../../components/TechnologyList.svelte";
   import Dropdown from "../../components/Custom/Dropdown.svelte";
   import type { PageData } from "./$types";
-  import TechnologyList from "../../components/TechnologyList.svelte";
 
   export let data: PageData;
   let filteredProjects = data.projects;
@@ -28,6 +29,8 @@
     });
   })();
 </script>
+
+<ScrollToTop />
 
 <section aria-labelledby="project-list-title">
   <div id="section-heading">
