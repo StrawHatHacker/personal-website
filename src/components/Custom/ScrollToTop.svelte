@@ -42,9 +42,9 @@
 
   @media screen and (max-width: 550px) {
     #scroll-to-top {
-      background-color: r(--color-secondary);
-      bottom: 5px;
-      right: 5px;
+      background-color: var(--color-secondary);
+      bottom: 7px;
+      right: 7px;
       width: 40px;
       height: 40px;
     }
