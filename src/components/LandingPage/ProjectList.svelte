@@ -1,5 +1,16 @@
 <script lang="ts">
+  import type { Project } from "../../data";
   import MainButtonLink from "../Buttons/MainButtonLink.svelte";
+
+  export let projects: Project[];
+
+  projects = projects.filter(
+    (p) =>
+      p.name === "OtakuGIFs" ||
+      p.name === "Kouhai" ||
+      p.name === "Shiro" ||
+      p.name === "UsefulScripts"
+  );
 
   export let thisElement: HTMLElement;
 </script>
@@ -12,30 +23,17 @@
   <h2 id="projects-section-title" class="hidden">Projects</h2>
 
   <ul class="project-container">
-    <li class="project-item">
-      <span>REST API</span>
-      <h3 style="--c: var(--otakugifs-color)">OtakuGIFs</h3>
-      <p>Free REST API that serves animated GIFs as reactions.</p>
-      <MainButtonLink href="/" text="Learn More" />
-    </li>
-    <li class="project-item">
-      <span>Website</span>
-      <h3 style="--c:var(--kouhai-color)">Kouhai</h3>
-      <p>Utilities for every day use.</p>
-      <MainButtonLink href="/" text="Learn More" />
-    </li>
-    <li class="project-item">
-      <span>Chatbot</span>
-      <h3 style="--c:var(--shiro-color)">Shiro</h3>
-      <p>Multipurpose chatbot for Discord.</p>
-      <MainButtonLink href="/" text="Learn More" />
-    </li>
-    <li class="project-item">
-      <span>Bash Scripts</span>
-      <h3 style="--c:var(--usefulscripts-color)">UsefulScripts</h3>
-      <p>Free REST API that serves animated GIFs as reactions.</p>
-      <MainButtonLink href="/" text="Learn More" />
-    </li>
+    {#each projects as p}
+      <li class="project-item">
+        <span>{p.type}</span>
+        <h3 style={`--c:${p.color}`}>{p.name}</h3>
+        <p>{p.description}</p>
+        <MainButtonLink
+          href={"/projects/" + p.name.toLowerCase()}
+          text="Learn More"
+        />
+      </li>
+    {/each}
   </ul>
 </section>
 
@@ -62,10 +60,11 @@
     border-radius: 10px;
     padding: 2rem;
     max-width: 300px;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     gap: 0.3em;
-    width: 100%;
+    flex: 1 1 0;
 
     & > span {
       font-size: 0.7rem;

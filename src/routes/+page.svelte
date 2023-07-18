@@ -1,9 +1,11 @@
 <script lang="ts">
+  import ProjectList from "../components/LandingPage/ProjectList.svelte";
   import Introduction from "../components/LandingPage/Introduction.svelte";
   import Main from "../components/LandingPage/Main.svelte";
   import Seperator from "../components/Seperator.svelte";
-  import ProjectList from "../components/LandingPage/ProjectList.svelte";
+  import type { PageData } from "./$types";
 
+  export let data: PageData;
   let introductionNode: HTMLElement;
   let projectsNode: HTMLElement;
 </script>
@@ -16,4 +18,4 @@
 
 <Seperator node={projectsNode} />
 
-<ProjectList bind:thisElement={projectsNode} />
+<ProjectList bind:thisElement={projectsNode} projects={data.projects} />
