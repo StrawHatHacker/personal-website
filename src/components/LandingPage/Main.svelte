@@ -22,7 +22,7 @@
 <style>
   main {
     width: var(--section-width-desktop);
-    margin: 80px auto 0 auto;
+    margin: 120px auto 0 auto;
     display: flex;
     gap: 4rem;
     justify-content: center;
@@ -75,6 +75,7 @@
 
   @media screen and (max-width: 1000px) {
     main {
+      margin-top: 80px;
       flex-direction: column;
       gap: 2rem;
       scale: 1 1;
