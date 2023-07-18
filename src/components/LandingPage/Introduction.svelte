@@ -15,16 +15,16 @@
   <section class="introduction" aria-labelledby="introduction-title">
     <h3 id="introduction-title" class="hidden">Introduction</h3>
     <p>
-      A self-taught & self-motivated , web developer and designer with
+      I'm a self-taught & self-motivated, web developer and designer with an
       extensive knowledge of the front-end world.
     </p>
     <p>
-      Worked with popular front-end frameworks such as Next.js and
-      SvelteKit but also with back-end libraries such as Express.js and
+      I have worked with popular front-end frameworks such as Next.js and
+      SvelteKit but also with back-end libraries like Express.js and
       Fastify.js.
     </p>
     <p>
-      Explored many other technologies such as Go, chatbots, and MongoDB.
+      Throught the years I've explored many technologies such as Go, Flutter, and AI.
     </p>
   </section>
   <section class="key-points" aria-labelledby="key-points-title">
