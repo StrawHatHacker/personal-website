@@ -4,8 +4,11 @@
   import HeaderLarge from "../components/HeaderLarge.svelte";
   import HeaderSmall from "../components/HeaderSmall.svelte";
   import Footer from "../components/LandingPage/Footer.svelte";
+  import { Close } from "carbon-icons-svelte";
+  import { fly } from "svelte/transition";
 
   let screenWidth: number;
+  let showDisclaimer = true;
 </script>
 
 <svelte:head>
@@ -30,6 +33,14 @@
 </svelte:head>
 
 <svelte:window bind:innerWidth={screenWidth} />
+{#if showDisclaimer}
+  <div id="disclaimer" transition:fly={{ duration: 200, y: -40, opacity: 1 }}>
+    <span>This website is a Work In Progress</span>
+    <button id="close-disclaimer-btn" on:click={() => (showDisclaimer = false)}>
+      <Close size={24} />
+    </button>
+  </div>
+{/if}
 
 {#if screenWidth < 750}
   <HeaderSmall />
@@ -42,3 +53,23 @@
 <slot />
 
 <Footer />
+
+<style>
+  #disclaimer {
+    width: 100%;
+    height: 20px;
+    background-color: var(--color-secondary);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+
+  #close-disclaimer-btn {
+    content: "X";
+    position: absolute;
+    right: 10px;
+    top: 13%;
+    padding: 3px;
+  }
+</style>
