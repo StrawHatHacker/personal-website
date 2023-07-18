@@ -2,14 +2,23 @@
   import LogoTwitter from "carbon-icons-svelte/lib/LogoTwitter.svelte";
   import LogoLinkedin from "carbon-icons-svelte/lib/LogoLinkedin.svelte";
   import MainLink from "./Buttons/MainLink.svelte";
+  import { page } from "$app/stores";
+  import { fade } from "svelte/transition";
 
   export let hidden = false;
+
+  let showTooltip: boolean;
+
+  $: {
+    // Show tooltip if the user is not in the landing page
+    showTooltip = $page.url.pathname !== "/";
+  }
 </script>
 
 <header class:hidden>
   <nav>
     <ul class="main-nav">
-      <li>
+      <li style="position:relative;">
         <a href="/" class="logo-anchor">
           <img
             class="logo"
@@ -17,9 +26,14 @@
             loading="lazy"
             width="60"
             height="60"
-            alt=""
+            alt="Panos's avatar"
           />
         </a>
+        {#if showTooltip}
+          <div class="tooltip" in:fade={{ duration: 100 }}>
+            Go to the main page
+          </div>
+        {/if}
       </li>
       <li><MainLink href="/projects" text="Projects" /></li>
       <li><MainLink href="/" text="Blog" /></li>

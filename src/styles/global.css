@@ -60,3 +60,27 @@ p {
   border-radius: 50%;
   border: 2px solid white;
 }
+
+.tooltip {
+  --border-radius-size: 10px;
+
+  position: absolute;
+  bottom: -30px;
+  background-color: var(--color-secondary);
+  color: var(--color-gray);
+  padding: 4px;
+  border-radius: 3px;
+  font-size: 0.66rem;
+  width: max-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -85%;
+    left: 15%;
+    border-left: var(--border-radius-size) solid transparent;
+    border-right: var(--border-radius-size) solid transparent;
+    border-bottom: var(--border-radius-size) solid var(--color-secondary);
+    border-top: var(--border-radius-size) solid transparent;
+  }
+}

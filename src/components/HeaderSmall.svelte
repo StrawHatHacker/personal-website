@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import LogoTwitter from "carbon-icons-svelte/lib/LogoTwitter.svelte";
   import LogoLinkedin from "carbon-icons-svelte/lib/LogoLinkedin.svelte";
   import MobileAudio from "carbon-icons-svelte/lib/MobileAudio.svelte";
@@ -6,23 +6,36 @@
   import Screen from "carbon-icons-svelte/lib/Screen.svelte";
   import Menu from "carbon-icons-svelte/lib/Menu.svelte";
   import Close from "carbon-icons-svelte/lib/Close.svelte";
-  import { fly } from "svelte/transition";
+  import { fade, fly } from "svelte/transition";
+  import { page } from "$app/stores";
 
   let menuOpen = false;
+  let showTooltip: boolean;
+
+  $: {
+    // Show tooltip if the user is not in the landing page
+    showTooltip = $page.url.pathname !== "/";
+  }
 </script>
 
 <div id="mock-header">
-  <a href="/" class="logo-anchor">
-    <img
-      class="logo"
-      src="/panos.png"
-      loading="lazy"
-      width="60"
-      height="60"
-      alt=""
-    />
-  </a>
-
+  <div style="position: relative;">
+    <a href="/" class="logo-anchor">
+      <img
+        class="logo"
+        src="/panos.png"
+        loading="lazy"
+        width="60"
+        height="60"
+        alt=""
+      />
+    </a>
+    {#if showTooltip}
+      <div class="tooltip" in:fade={{ delay: 50, duration: 200 }}>
+        Go to the main page
+      </div>
+    {/if}
+  </div>
   <button on:click={() => (menuOpen = true)} class="open-button">
     <Menu size={32} />
   </button>
