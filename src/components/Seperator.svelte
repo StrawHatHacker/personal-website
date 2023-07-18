@@ -15,7 +15,7 @@
   .seperator {
     text-align: center;
     & > button {
-      margin: 150px 0;
+      margin: 140px 0;
       padding: 0.5rem;
       border-radius: 50%;
     }
