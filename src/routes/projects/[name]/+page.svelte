@@ -30,11 +30,6 @@
       <div class="information">
         <p><b>{project.description}</b></p>
         <p>{@html project.longDescription}</p>
-        <p>
-          If you want to learn even more,
-          <a href="/" class="contact-anchor">contact me</a>
-          !
-        </p>
       </div>
       <TechnologyList {project} />
       {#if project.url}

@@ -24,7 +24,7 @@
       Fastify.js.
     </p>
     <p>
-      Throught the years I've explored many technologies such as Go, Flutter, and AI.
+      Throught the years I have explored many technologies such as Go, Flutter, and AI.
     </p>
   </section>
   <section class="key-points" aria-labelledby="key-points-title">
@@ -35,7 +35,7 @@
         <div>
           <h3>Mission</h3>
           <p>
-            Has a mission of creating captivating and user-friendly websites.
+            I have a mission of creating captivating and user-friendly websites.
           </p>
         </div>
       </li>
@@ -44,7 +44,7 @@
         <div>
           <h3>Focus</h3>
           <p>
-            Focuses on accessibility and perfomance for the best site
+            With a focus on accessibility and perfomance for the best site
             experience.
           </p>
         </div>
@@ -103,7 +103,7 @@
 
   @media screen and (max-width: 600px) {
     section#introduction {
-      font-size: 0.85em;
+      font-size: 0.95em;
     }
   }
 </style>

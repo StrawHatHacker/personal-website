@@ -35,7 +35,7 @@
 <svelte:window bind:innerWidth={screenWidth} />
 {#if showDisclaimer}
   <div id="disclaimer" transition:fly={{ duration: 200, y: -40, opacity: 1 }}>
-    <span>This website is a Work In Progress</span>
+    <span><u>This website is a work in progress</u></span>
     <button id="close-disclaimer-btn" on:click={() => (showDisclaimer = false)}>
       <Close size={24} />
     </button>

@@ -28,6 +28,7 @@
     justify-content: center;
     align-items: center;
     max-width: 1800px;
+    user-select: none;
   }
 
   #main-text {
@@ -101,6 +102,12 @@
     #main-img {
       max-width: 100%;
       height: auto;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    main {
+      margin-top: 60px;
     }
   }
 </style>
