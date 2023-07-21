@@ -1,14 +1,14 @@
 <script lang="ts">
-  import LogoTwitter from "carbon-icons-svelte/lib/LogoTwitter.svelte";
   import LogoLinkedin from "carbon-icons-svelte/lib/LogoLinkedin.svelte";
+  import LogoTwitter from "carbon-icons-svelte/lib/LogoTwitter.svelte";
   import MobileAudio from "carbon-icons-svelte/lib/MobileAudio.svelte";
-  import Idea from "carbon-icons-svelte/lib/Idea.svelte";
+  import UserProfile from "carbon-icons-svelte/lib/UserProfile.svelte";
   import Screen from "carbon-icons-svelte/lib/Screen.svelte";
-  import Menu from "carbon-icons-svelte/lib/Menu.svelte";
   import Close from "carbon-icons-svelte/lib/Close.svelte";
+  import Menu from "carbon-icons-svelte/lib/Menu.svelte";
   import { fade, fly } from "svelte/transition";
   import { page } from "$app/stores";
-
+  
   let menuOpen = false;
   let showTooltip: boolean;
 
@@ -49,7 +49,7 @@
       </button>
       <div class="main-nav">
         <a href="/about" on:click={() => (menuOpen = false)}>
-          <Idea size={32} />
+          <UserProfile size={32} />
           <div>About</div>
         </a>
         <a href="/projects" on:click={() => (menuOpen = false)}>
@@ -80,7 +80,7 @@
     height: 100vh;
     background: var(--color-secondary);
     position: fixed;
-    z-index: 1;
+    z-index: 101;
     top: 0;
     right: -0%;
   }
@@ -123,6 +123,7 @@
 
     & > * {
       width: 90px;
+      min-width: 90px;
       height: 90px;
       flex: 0 1 auto;
       padding: 1rem;
