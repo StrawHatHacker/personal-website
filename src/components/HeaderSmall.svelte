@@ -6,9 +6,10 @@
   import Screen from "carbon-icons-svelte/lib/Screen.svelte";
   import Close from "carbon-icons-svelte/lib/Close.svelte";
   import Menu from "carbon-icons-svelte/lib/Menu.svelte";
+  import { LogoGithub } from "carbon-icons-svelte";
   import { fade, fly } from "svelte/transition";
   import { page } from "$app/stores";
-  
+
   let menuOpen = false;
   let showTooltip: boolean;
 
@@ -61,10 +62,13 @@
           <div>Contact me</div>
         </a>
         <div class="social-nav">
-          <a href="https://twitter.com/xSkillers3">
+          <a href="https://github.com/StrawHatHacker" target="_blank"
+            ><LogoGithub size={32} /></a
+          >
+          <a href="https://twitter.com/xSkillers3" target="_blank">
             <LogoTwitter size={32} />
           </a>
-          <a href="https://www.linkedin.com/in/panos-ntais/">
+          <a href="https://www.linkedin.com/in/panos-ntais/" target="_blank">
             <LogoLinkedin size={32} />
           </a>
         </div>
@@ -181,9 +185,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 0.1rem 0.3rem;;
+    flex-wrap: wrap;
 
     & a {
+      flex: 0 1 0;
       background: rgba(255, 255, 255, 0.1);
       width: 32px;
       height: 32px;
