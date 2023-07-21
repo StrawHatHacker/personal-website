@@ -31,7 +31,7 @@
       />
     </a>
     {#if showTooltip}
-      <div class="tooltip" in:fade={{ delay: 50, duration: 200 }}>
+      <div class="tooltip-up-left" in:fade={{ delay: 50, duration: 200 }}>
         Go to the main page
       </div>
     {/if}
@@ -48,13 +48,13 @@
         <Close size={32} />
       </button>
       <div class="main-nav">
+        <a href="/about" on:click={() => (menuOpen = false)}>
+          <Idea size={32} />
+          <div>About</div>
+        </a>
         <a href="/projects" on:click={() => (menuOpen = false)}>
           <Screen size={32} />
           <div>Projects</div>
-        </a>
-        <a href="/" on:click={() => (menuOpen = false)}>
-          <Idea size={32} />
-          <div>Blog</div>
         </a>
         <a href="/" on:click={() => (menuOpen = false)}>
           <MobileAudio size={32} />

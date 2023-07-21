@@ -2,8 +2,9 @@
   import LogoTwitter from "carbon-icons-svelte/lib/LogoTwitter.svelte";
   import LogoLinkedin from "carbon-icons-svelte/lib/LogoLinkedin.svelte";
   import MainLink from "./Buttons/MainLink.svelte";
-  import { page } from "$app/stores";
+  import { LogoGithub } from "carbon-icons-svelte";
   import { fade } from "svelte/transition";
+  import { page } from "$app/stores";
 
   export let hidden = false;
 
@@ -30,16 +31,17 @@
           />
         </a>
         {#if showTooltip}
-          <div class="tooltip" in:fade={{ duration: 100 }}>
+          <div class="tooltip-up-left" in:fade={{ duration: 100 }}>
             Go to the main page
           </div>
         {/if}
       </li>
+      <li><MainLink href="/about" text="About" /></li>
       <li><MainLink href="/projects" text="Projects" /></li>
-      <li><MainLink href="/" text="Blog" /></li>
       <li><MainLink href="/" text="Contact me" /></li>
     </ul>
     <div class="social-nav">
+      <a href="https://github.com/StrawHatHacker" target="_blank"><LogoGithub size={32} /></a>
       <a href="https://twitter.com/xSkillers3"><LogoTwitter size={32} /></a>
       <a href="https://www.linkedin.com/in/panos-ntais/">
         <LogoLinkedin size={32} />
