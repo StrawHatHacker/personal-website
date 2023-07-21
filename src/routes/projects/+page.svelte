@@ -103,6 +103,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    background-color: var(--color-main);
   }
 
   .project-heading {
