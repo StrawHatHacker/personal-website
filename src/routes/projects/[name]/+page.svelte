@@ -95,15 +95,6 @@
     }
   }
 
-  .contact-anchor {
-    text-decoration: underline;
-
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3em;
-  }
-
   @media screen and (max-width: 500px) {
     section {
       width: var(--section-width-mobile);
