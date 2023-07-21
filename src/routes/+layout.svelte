@@ -11,7 +11,7 @@
 
   let screenWidth: number;
   let showDisclaimer = true;
-  let showHiringStatus = true;
+  let showHiringStatus = false;
 
   onMount(() => setTimeout(() => (showHiringStatus = true), 2000));
 </script>
