@@ -18,12 +18,12 @@ export const projects: Project[] = [
         description: "Free REST API that serves animated GIFs, WEBPs & AVIFs as reactions. Used mainly by Discord bot creators.",
         longDescription: `OtakuGIFs was my first full stack project.
         On its first release, there was an integration with Stripe and Zoho mail for registering and receipt emails.
-        Files were served by a CDN for optimal delivery speed and the API has as little overhead as possible for snappy responses.<br/><br/>
         Users could buy API Keys to use the REST API, and there were montly to yearly plans. 
         On the dashboard, users could reset their keys and see when they expire, as well as access their transaction history.<br/><br/>
+        Files are served by a CDN for optimal delivery speed and the API has as little overhead as possible for snappy responses.<br/><br/>
         I made it free-to-use because, although it was top search on Google when searching "anime gif api" (which was one of my goals), there were not as many sales as I would like.
         So, it being free, makes it easier for me to support and I can better contribute to the Bot dev community, while the cost to run is minimal.<br/><br/>
-        The goal was to learn React and its quirks but also be able to connect all those pieces together;
+        The goal was to learn React and its quirks but also be able to connect all these pieces together;
         authentication, payments, webhooks, content delivery and build a solid understanding of web standards.`,
         icon: "/otakugifsLogo.svg",
         technologies: ["React.js", 'TypeScript', 'SCSS', 'MongoDB', 'Fastify.js',],
