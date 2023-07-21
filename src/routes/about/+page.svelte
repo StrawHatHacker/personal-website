@@ -53,7 +53,7 @@
       </p>
     </div>
     <div>
-      <h3 id="learning"><a href="learning"># Learning</a></h3>
+      <h3 id="learning"><a href="#learning"># Learning</a></h3>
       <p>
         Currently I'm learning Next.js to supercharge my React development,
         <br />
@@ -100,5 +100,12 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    section {
+      width: var(--section-width-mobile);
+      font-size: 0.9rem;
+    }
   }
 </style>
