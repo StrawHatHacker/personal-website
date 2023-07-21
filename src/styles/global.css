@@ -61,7 +61,7 @@ p {
   border: 2px solid white;
 }
 
-.tooltip {
+.tooltip-up-left {
   --border-radius-size: 10px;
 
   position: absolute;
@@ -82,5 +82,26 @@ p {
     border-right: var(--border-radius-size) solid transparent;
     border-bottom: var(--border-radius-size) solid var(--color-secondary);
     border-top: var(--border-radius-size) solid transparent;
+  }
+}
+
+.tooltip-down-left {
+  --border-radius-size: 10px;
+
+  position: absolute;
+  bottom: 0px;
+  padding: 4px;
+  border-radius: 3px;
+  width: max-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 3px;
+    border-left: var(--border-radius-size) solid transparent;
+    border-right: var(--border-radius-size) solid transparent;
+    border-bottom: var(--border-radius-size) solid transparent;
+    border-top: var(--border-radius-size) solid var(--color-secondary);
   }
 }
