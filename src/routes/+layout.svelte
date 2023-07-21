@@ -41,6 +41,7 @@
     </button>
   </div>
 {/if}
+<CirclesBg />
 
 {#if screenWidth < 750}
   <HeaderSmall />
