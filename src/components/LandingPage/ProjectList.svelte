@@ -56,6 +56,7 @@
   }
 
   li.project-item {
+    background-color: var(--color-main);
     border: 2px solid white;
     border-radius: 10px;
     padding: 2rem;
