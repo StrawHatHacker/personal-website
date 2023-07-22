@@ -48,7 +48,7 @@
         cloud servers I use <a href="https://www.hetzner.com/">hetzner</a>.
         <br /><br />
         Alternatives to the technologies mentioned above are React for SPAs, Go with
-        GIN for the backend or Sveltekits's endpoints, and sqlite instead of MongoDB
+        GIN for the backend or Sveltekits' endpoints, and sqlite instead of MongoDB
         for small datasets.
       </p>
     </div>

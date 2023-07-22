@@ -28,7 +28,7 @@
         loading="lazy"
         width="60"
         height="60"
-        alt=""
+        alt="Panos' avatar"
       />
     </a>
     {#if showTooltip}
