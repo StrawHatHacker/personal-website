@@ -10,7 +10,7 @@
     class="disclaimer"
     transition:fly={{ duration: 200, y: -40, opacity: 1 }}
   >
-    <span>👷‍♀️<u>This website is a work in progress</u>👷‍♂️</span>
+    <span>👷‍♀️This website is a work in progress👷‍♂️</span>
     <button
       class="close-disclaimer-btn"
       on:click={() => (showDisclaimer = false)}
@@ -23,19 +23,37 @@
 <style>
   .disclaimer {
     width: 100%;
-    height: 20px;
+    height: 35px;
     background-color: var(--color-secondary);
     font-size: 0.8rem;
     text-align: center;
-    padding: 0.5rem 0;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .close-disclaimer-btn {
-    content: "X";
     position: absolute;
     right: 10px;
-    top: 13%;
+    top: 2px;
     padding: 3px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+  }
+
+  .close-disclaimer-btn:hover {
+    background-color: var(--color-main);
+  }
+
+  .close-disclaimer-btn:focus-visible {
+    background-color: var(--color-main);
+    border: 1px solid white;
   }
 </style>

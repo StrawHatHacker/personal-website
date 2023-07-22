@@ -83,12 +83,13 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    letter-spacing: 0.8px;
   }
 
   .social-nav {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.7rem;
 
     & a {
       background: rgba(255, 255, 255, 0.1);

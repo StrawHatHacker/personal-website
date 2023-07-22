@@ -34,10 +34,15 @@
     display: grid;
     place-items: center;
     transition: all 0.3s ease;
+    border: 2px solid transparent;
   }
 
   #scroll-to-top:hover {
     background-color: var(--color-secondary);
+  }
+
+  #scroll-to-top:focus-visible {
+    border: 2px solid white;
   }
 
   @media screen and (max-width: 550px) {

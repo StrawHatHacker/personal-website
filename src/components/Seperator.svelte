@@ -13,11 +13,29 @@
 
 <style>
   .seperator {
-    text-align: center;
-    & > button {
-      margin: 140px 0;
-      padding: 0.5rem;
-      border-radius: 50%;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    margin: 140px 0;
+    padding: 0.4rem;
+    border-radius: 50%;
+    max-height: 40px;
+    max-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    border: 2px solid transparent;    
+  }
+
+  button:hover {
+    background-color: var(--color-secondary);
+  }
+
+  button:focus-visible {
+    border: 2px solid white;
   }
 </style>

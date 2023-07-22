@@ -35,8 +35,6 @@
 <svelte:window bind:innerWidth={screenWidth} />
 
 <Disclaimer />
-<Hiring />
-<CirclesBg />
 
 {#if screenWidth < 750}
   <HeaderSmall />
@@ -49,3 +47,7 @@
 <slot />
 
 <Footer />
+
+<!-- Absolutely positioned components -->
+<Hiring />
+<CirclesBg />

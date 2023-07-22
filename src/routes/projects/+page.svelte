@@ -87,6 +87,7 @@
 
     & > h2 {
       margin: 1rem 0;
+      letter-spacing: 1.4px;
     }
   }
 
@@ -124,7 +125,8 @@
 
   .project-description {
     font-size: 0.9rem;
-    max-width: 60ch;
+    max-width: 55ch;
+    text-wrap: balance;
   }
 
   .button-container {
