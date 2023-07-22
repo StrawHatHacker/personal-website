@@ -36,8 +36,8 @@
           </div>
         {/if}
       </li>
-      <li><MainLink href="/about" text="About" /></li>
       <li><MainLink href="/projects" text="Projects" /></li>
+      <li><MainLink href="/about" text="About" /></li>
       <li><MainLink href="/" text="Contact me" /></li>
     </ul>
     <div class="social-nav">
@@ -50,6 +50,7 @@
   </nav>
 </header>
 
+<!-- Spacer -->
 <div
   class:hidden={!hidden}
   style="width:100%;height:80px;margin: 1rem auto 0 auto;"

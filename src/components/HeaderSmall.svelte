@@ -49,13 +49,13 @@
         <Close size={32} />
       </button>
       <div class="main-nav">
-        <a href="/about" on:click={() => (menuOpen = false)}>
-          <UserProfile size={32} />
-          <div>About</div>
-        </a>
         <a href="/projects" on:click={() => (menuOpen = false)}>
           <Screen size={32} />
           <div>Projects</div>
+        </a>
+        <a href="/about" on:click={() => (menuOpen = false)}>
+          <UserProfile size={32} />
+          <div>About</div>
         </a>
         <a href="/" on:click={() => (menuOpen = false)}>
           <MobileAudio size={32} />
@@ -185,7 +185,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.1rem 0.3rem;;
+    gap: 0.1rem 0.3rem;
     flex-wrap: wrap;
 
     & a {
