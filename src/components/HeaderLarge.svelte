@@ -38,12 +38,12 @@
       </li>
       <li><MainLink href="/projects" text="Projects" /></li>
       <li><MainLink href="/about" text="About" /></li>
-      <li><MainLink href="/" text="Contact me" /></li>
+      <li><MainLink href="/contact" text="Contact me" /></li>
     </ul>
     <div class="social-nav">
       <a href="https://github.com/StrawHatHacker" target="_blank"><LogoGithub size={32} /></a>
       <a href="https://twitter.com/xSkillers3"><LogoTwitter size={32} /></a>
-      <a href="https://www.linkedin.com/in/panos-ntais/">
+      <a href="https://www.linkedin.com/in/panos-ntais">
         <LogoLinkedin size={32} />
       </a>
     </div>

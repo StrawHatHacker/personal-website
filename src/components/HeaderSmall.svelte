@@ -57,7 +57,7 @@
           <UserProfile size={32} />
           <div>About</div>
         </a>
-        <a href="/" on:click={() => (menuOpen = false)}>
+        <a href="/contact" on:click={() => (menuOpen = false)}>
           <MobileAudio size={32} />
           <div>Contact me</div>
         </a>
@@ -68,7 +68,7 @@
           <a href="https://twitter.com/xSkillers3" target="_blank">
             <LogoTwitter size={32} />
           </a>
-          <a href="https://www.linkedin.com/in/panos-ntais/" target="_blank">
+          <a href="https://www.linkedin.com/in/panos-ntais" target="_blank">
             <LogoLinkedin size={32} />
           </a>
         </div>
