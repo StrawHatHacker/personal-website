@@ -33,6 +33,7 @@
     display: flex;
     align-items: center;
     gap: 0.3em;
+    font-weight: 400;
 
     &:hover {
       opacity: 0.6;

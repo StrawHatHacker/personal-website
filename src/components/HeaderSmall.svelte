@@ -124,16 +124,22 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
 
     & > * {
-      width: 90px;
-      min-width: 90px;
-      height: 90px;
+      width: 100px;
+      min-width: 100px;
+      min-height: 100px;
       flex: 0 1 auto;
       padding: 1rem;
       border: 2px solid white;
       border-radius: 10px;
       transition: background 0.2s ease;
+
+      & > div {
+        margin-top: 4px;
+      }
 
       &:hover {
         background: var(--color-main);

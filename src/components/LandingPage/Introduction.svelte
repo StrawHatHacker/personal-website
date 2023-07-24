@@ -17,14 +17,14 @@
     <p>
       I'm a self-taught & self-motivated, web developer and designer with an
       extensive knowledge of the front-end world.
-    </p>
-    <p>
-      I have worked with popular front-end frameworks such as Next.js and
-      SvelteKit but also with back-end libraries like Express.js and
-      Fastify.js.
-    </p>
-    <p>
-      Throught the years I have explored many technologies such as Go, Flutter, and AI.
+      <br />
+      <br />
+      I have worked with popular front-end frameworks such as Next.js and SvelteKit
+      but also with back-end libraries like Express.js and Fastify.js.
+      <br />
+      <br />
+      Throught the years I have explored many technologies such as Go, Flutter, and
+      AI.
     </p>
   </section>
   <section class="key-points" aria-labelledby="key-points-title">
@@ -86,6 +86,7 @@
     width: 50%;
     & > p {
       max-width: 50ch;
+      text-wrap: balance;
     }
   }
 

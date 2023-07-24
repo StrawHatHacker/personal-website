@@ -60,6 +60,7 @@
 
     &::after {
       content: "he/him";
+      font-family: "Kanit", sans-serif;
       font-size: 0.7rem;
       scale: 0.8 1;
       font-weight: normal;

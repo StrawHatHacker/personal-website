@@ -50,7 +50,7 @@
 
 <style>
   #hiring-status {
-    padding: 0.9rem;
+    padding: 0.7rem 1rem;
     border: 2px solid var(--color-secondary);
     border-radius: 20px;
     background-color: var(--color-main);
@@ -70,13 +70,12 @@
   }
 
   .hiring-status-title {
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-weight: 400;
   }
 
   .hiring-status-text {
-    font-size: 0.9em;
+    font-size: 0.9rem;
   }
 
   .hiring-status-person {

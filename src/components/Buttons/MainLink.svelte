@@ -17,7 +17,7 @@
     &::after {
       content: "";
       position: absolute;
-      height: 2px;
+      height: 1px;
       width: 0%;
       left: 50%;
       bottom: -2px;
@@ -32,7 +32,7 @@
     }
 
     &:focus-visible {
-      outline: 2px solid white;
+      outline: 1px solid white;
     }
   }
 </style>

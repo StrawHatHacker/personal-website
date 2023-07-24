@@ -8,7 +8,7 @@
   <h4>Technologies</h4>
   <ul class="technology-list">
     {#each project.technologies as technology}
-      <li>{technology}</li>
+      <li><span>{technology}</span></li>
     {/each}
   </ul>
 </div>
@@ -24,6 +24,7 @@
       margin: 0.5rem 0 0 0;
 
       & > li {
+        font-weight: 400;
         background: var(--color-secondary);
         padding: 0.5rem;
         border-radius: 6px;

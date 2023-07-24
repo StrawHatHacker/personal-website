@@ -18,9 +18,10 @@ body {
   padding: 0;
   background-color: var(--color-main);
   color: hsl(0, 0%, 90%);
-  font-family: "Raleway", sans-serif;
+  font-family: "Kanit", sans-serif;
   position: relative;
   overflow-x: hidden;
+  font-weight: 200;
 }
 
 ul {
@@ -48,8 +49,21 @@ h4 {
   margin: 0;
 }
 
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 400;
+}
+
 p {
   margin: 0.5em 0;
+  font-weight: 200;
+}
+
+b {
+  font-weight: 400;
 }
 
 .hidden {
@@ -68,16 +82,17 @@ p {
   bottom: -30px;
   background-color: var(--color-secondary);
   color: var(--color-gray);
-  padding: 4px;
+  padding: 4px 8px;
   border-radius: 3px;
   font-size: 0.66rem;
+  font-weight: 400;
   width: max-content;
 
   &::before {
     content: "";
     position: absolute;
-    top: -85%;
-    left: 15%;
+    top: -72%;
+    left: 14%;
     border-left: var(--border-radius-size) solid transparent;
     border-right: var(--border-radius-size) solid transparent;
     border-bottom: var(--border-radius-size) solid var(--color-secondary);

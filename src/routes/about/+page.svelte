@@ -62,7 +62,7 @@
       </p>
     </div>
   </div>
-  <p style="font-size: 14px;">
+  <p style="font-size: 15px;">
     ❗All of that was written by me without AI assistance❗
   </p>
 </section>
@@ -75,11 +75,6 @@
 
   h2 {
     margin: 1rem 0 2rem 0;
-    letter-spacing: 1.4px;
-  }
-
-  h3 {
-    letter-spacing: 1px;
   }
 
   a {

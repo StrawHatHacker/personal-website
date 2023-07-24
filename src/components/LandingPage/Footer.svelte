@@ -12,11 +12,12 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-    font-size: 0.7em;
-    gap: 0.3rem 2rem;
+    font-size: 0.8rem;
+    gap: 0.2rem 2rem;
     flex-wrap: wrap;
     border-top: 2px solid rgb(34, 34, 34);
     padding: 7px;
+    font-weight: 300;
   }
 
   @media screen and (max-width: 700px) {

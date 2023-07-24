@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 200;
   }
 
   .close-disclaimer-btn {

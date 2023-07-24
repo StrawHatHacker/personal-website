@@ -54,6 +54,7 @@
   }
 
   .btn {
+    font-weight: 400;
     min-width: 100px;
     border: 2px solid white;
     border-radius: 6px;
@@ -77,6 +78,7 @@
 
   .dropdown {
     position: absolute;
+    font-weight: 300;
     font-size: 0.7rem;
     top: 50px;
     left: 0;

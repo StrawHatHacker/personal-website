@@ -87,7 +87,6 @@
 
     & > h2 {
       margin: 1rem 0;
-      letter-spacing: 1.4px;
     }
   }
 
