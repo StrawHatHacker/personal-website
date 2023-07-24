@@ -49,7 +49,7 @@
     #scroll-to-top {
       background-color: var(--color-secondary);
       bottom: 7px;
-      right: 7px;
+      right: 17px;
       width: 40px;
       height: 40px;
     }

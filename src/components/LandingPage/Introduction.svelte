@@ -57,10 +57,11 @@
   section#introduction {
     width: var(--section-width-desktop);
     margin: auto;
-    scroll-margin: 50px;
+    scroll-margin: 20px;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1.5rem 1rem;
+    line-height: 1.45;
   }
 
   .key-points {
@@ -68,7 +69,7 @@
     & > ul {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      gap: 0.5rem;
 
       & > li {
         display: flex;
@@ -103,8 +104,12 @@
   }
 
   @media screen and (max-width: 600px) {
+    p {
+      margin: 0;
+    }
+
     section#introduction {
-      font-size: 0.95em;
+      font-size: 0.95rem;
     }
   }
 </style>

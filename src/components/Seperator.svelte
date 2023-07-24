@@ -15,11 +15,10 @@
   .seperator {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 
   button {
-    margin: 140px 0;
+    margin: 90px 0 120px 0;
     padding: 0.4rem;
     border-radius: 50%;
     max-height: 40px;
