@@ -94,11 +94,11 @@
 <style>
   section {
     width: var(--section-width-desktop);
-    margin: 2rem auto;
+    margin: 3rem auto;
   }
 
   h2 {
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
   }
 
   h3 {

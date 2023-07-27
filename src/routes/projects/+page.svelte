@@ -77,7 +77,7 @@
 <style>
   section {
     width: var(--section-width-desktop);
-    margin: 2rem auto;
+    margin: 2rem auto 3rem auto;
   }
 
   #section-heading {

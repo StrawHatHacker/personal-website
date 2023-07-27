@@ -56,21 +56,20 @@
       <h3 id="learning"><a href="#learning"># Learning</a></h3>
       <p>
         Currently I'm learning Next.js to supercharge my React development,
-        <br />
         Flutter, to gain the 🎉fullstack status🎉, and I'm trying to get better at
         designing on Figma for more stunning results 😊
       </p>
     </div>
   </div>
-  <p style="font-size: 15px;">
+  <div style="font-size: 15px;">
     ❗All of that was written by me without AI assistance❗
-  </p>
+  </div>
 </section>
 
 <style>
   section {
     width: var(--section-width-desktop);
-    margin: 2rem auto;
+    margin: 3rem auto;
   }
 
   h2 {
