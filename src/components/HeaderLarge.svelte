@@ -60,7 +60,6 @@
   header {
     width: var(--section-width-desktop);
     margin: 1rem auto 0 auto;
-    font-weight: 200;
     height: 80px;
   }
 
@@ -84,7 +83,8 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
   }
 
   .social-nav {

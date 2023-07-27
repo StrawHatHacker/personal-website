@@ -17,10 +17,10 @@
     &::after {
       content: "";
       position: absolute;
-      height: 1px;
+      height: 2px;
       width: 0%;
       left: 50%;
-      bottom: -2px;
+      bottom: 0px;
       background-color: currentColor;
       transition: all 0.3s ease-out;
     }
