@@ -6,8 +6,6 @@
   import { fade } from "svelte/transition";
   import { page } from "$app/stores";
 
-  export let hidden = false;
-
   let showTooltip: boolean;
 
   $: {
@@ -16,7 +14,7 @@
   }
 </script>
 
-<header class:hidden>
+<header>
   <nav>
     <ul class="main-nav">
       <li style="position:relative;">
@@ -50,12 +48,6 @@
   </nav>
 </header>
 
-<!-- Spacer -->
-<div
-  class:hidden={!hidden}
-  style="width:100%;height:80px;margin: 1rem auto 0 auto;"
-/>
-
 <style>
   header {
     width: var(--section-width-desktop);
@@ -83,8 +75,8 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1rem;
+    font-weight: 500;
   }
 
   .social-nav {

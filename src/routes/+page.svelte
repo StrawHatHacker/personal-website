@@ -7,17 +7,16 @@
   import type { PageData } from "./$types";
 
   export let data: PageData;
-  let introductionNode: HTMLElement;
   let projectsNode: HTMLElement;
 </script>
 
 <Main />
 
-<Seperator node={introductionNode} />
+<Introduction />
 
-<Introduction bind:thisElement={introductionNode} />
-
-<Seperator node={projectsNode} />
+<div style="height: 30vh;">
+  <Seperator node={projectsNode} />
+</div>
 
 <ProjectList bind:thisElement={projectsNode} projects={data.projects} />
 

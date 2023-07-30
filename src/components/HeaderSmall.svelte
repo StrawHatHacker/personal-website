@@ -105,6 +105,7 @@
 
   #mock-header {
     z-index: 0;
+    height: 80px;
     margin: 1rem 2rem 0 2rem;
     display: flex;
     justify-content: space-between;

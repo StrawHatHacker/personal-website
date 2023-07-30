@@ -13,6 +13,8 @@
     transition: all 0.3s ease;
     outline: 2px solid transparent;
     outline-offset: 0.2em;
+    text-transform: uppercase;
+    color: #bbb;
 
     &::after {
       content: "";
@@ -20,7 +22,7 @@
       height: 2px;
       width: 0%;
       left: 50%;
-      bottom: 0px;
+      bottom: 1px;
       background-color: currentColor;
       transition: all 0.3s ease-out;
     }

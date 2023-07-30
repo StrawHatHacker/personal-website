@@ -1,14 +1,14 @@
+<script lang="ts">
+  import { fade } from "svelte/transition";
+  import Typewriter from "../Custom/Typewriter.svelte";
+</script>
+
 <section aria-labelledby="name">
   <main>
-    <div id="main-text">
-      <h1 id="name">
-        <span id="name">Panos</span>
-        <span id="surname">Ntais</span>
-      </h1>
-      <p>
-        A supercharged <b>web developer</b> and <b>designer</b> with a focus on simplicity.
-      </p>
-    </div>
+    <h1 id="name">
+      <span id="name">Panos</span>
+      <span id="surname">Ntais</span>
+    </h1>
 
     <img
       id="main-img"
@@ -17,31 +17,29 @@
       alt="A developer thinking with their laptop open"
     />
   </main>
+
+  <p>
+    <Typewriter text="A supercharged web developer and designer." />
+    <span class="hidden">A supercharged web developer and designer.</span>
+  </p>
 </section>
 
 <style>
   main {
     width: var(--section-width-desktop);
-    margin: 120px auto 0 auto;
+    margin: 100px auto 0 auto;
     display: flex;
     gap: 4rem;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 1800px;
     user-select: none;
   }
 
-  #main-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    & > p {
-      text-wrap: balance;
-    }
-  }
-
   #main-img {
-    max-width: 50%;
+    width: 50%;
+    max-width: 1000px;
+    min-width: 300px;
     height: auto;
   }
 
@@ -71,27 +69,30 @@
     }
   }
 
+  p {
+    text-align: center;
+    width: var(--section-width-mobile);
+    margin: 4rem auto 0 auto;
+    font-size: 2rem;
+    user-select: none;
+  }
+
   #surname {
     opacity: 0.5;
   }
 
   @media screen and (max-width: 1000px) {
     main {
-      margin-top: 80px;
+      margin-top: 60px;
       flex-direction: column;
-      gap: 2rem;
+      gap: 3rem;
       scale: 1 1;
-    }
-
-    #main-text {
-      justify-content: center;
-      text-align: center;
-      align-items: center;
     }
 
     h1 {
       font-size: 4rem;
       transform-origin: center;
+      text-align: center;
     }
 
     h1::after {
@@ -108,7 +109,11 @@
 
   @media screen and (max-width: 1000px) {
     main {
-      margin-top: 60px;
+      margin-top: 40px;
+    }
+    p {
+      font-size: 1.3rem;
+      margin-top: 2rem;
     }
   }
 </style>

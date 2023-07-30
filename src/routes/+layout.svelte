@@ -41,7 +41,7 @@
 {:else if screenWidth >= 750}
   <HeaderLarge />
 {:else}
-  <HeaderLarge hidden={true} />
+  <div style="width:100%;height:80px;margin: 1rem auto 0 auto;" />
 {/if}
 
 <slot />

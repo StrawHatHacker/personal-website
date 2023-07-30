@@ -1,6 +1,8 @@
 <script lang="ts">
+  import { fade, fly } from "svelte/transition";
   import type { Project } from "../../data";
   import MainButtonLink from "../Buttons/MainButtonLink.svelte";
+  import Intersect from "../Custom/Intersect.svelte";
 
   export let projects: Project[];
 
@@ -19,32 +21,39 @@
   id="projects"
   aria-labelledby="projects-section-title"
   bind:this={thisElement}
+  style="min-height: 600px;"
 >
   <h2 id="projects-section-title" class="hidden">Projects</h2>
 
-  <ul class="project-container">
-    {#each projects as p}
-      <li class="project-item">
-        <span>{p.type}</span>
-        <h3 style={`--c:${p.color}`}>{p.name}</h3>
-        <p>{p.description}</p>
-        <MainButtonLink
-          href={"/projects/" + p.name.toLowerCase()}
-          text="Learn More"
-        />
-      </li>
-    {/each}
-  </ul>
+  <div>
+    <ul class="project-container">
+      {#each projects as p}
+        <Intersect element={thisElement}>
+          <li
+            class="project-item"
+            transition:fly|local={{ duration: 2000, y: 200 }}
+          >
+            <span>{p.type}</span>
+            <h3 style={`--c:${p.color}`}>{p.name}</h3>
+            <p>{p.description}</p>
+            <MainButtonLink
+              href={"/projects/" + p.name.toLowerCase()}
+              text="Learn more"
+            />
+          </li>
+        </Intersect>
+      {/each}
+    </ul>
+  </div>
+  <div class="see-all-projects-btn">
+    <MainButtonLink href="/projects" text="VIEW ALL" size="lg" />
+  </div>
 </section>
-
-<div class="see-all-projects-btn">
-  <MainButtonLink href="/projects" text="VIEW ALL" size="lg" />
-</div>
 
 <style>
   section#projects {
     width: var(--section-width-desktop);
-    margin: auto;
+    margin: 0 auto 70px auto;
     scroll-margin: 20px;
   }
 
