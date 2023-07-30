@@ -121,7 +121,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
+    overflow: hidden;
 
     & > div {
       width: 100%;
