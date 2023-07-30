@@ -56,7 +56,7 @@
       <h3>Call me</h3>
       <span>
         {"+30 69" + phone.join("")}
-        <CopyButton text={email.join("") + "@gmail.com"} />
+        <CopyButton text={"+30 69" + phone.join("")} />
       </span>
     </a>
     <div class="contact-item">
