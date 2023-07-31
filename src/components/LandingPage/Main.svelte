@@ -1,13 +1,31 @@
 <script lang="ts">
-  import { fade } from "svelte/transition";
+  import { onMount } from "svelte";
   import Typewriter from "../Custom/Typewriter.svelte";
+
+  let nameEl: HTMLElement, surnameEl: HTMLElement;
+
+  function createFancyText(element: HTMLElement) {
+    const text = element.innerText;
+    element.innerText = "";
+    for (const letter of text) {
+      const span = document.createElement("span");
+      span.className = "fancy-letter";
+      span.innerText = letter;
+      element.appendChild(span);
+    }
+  }
+
+  onMount(() => {
+    createFancyText(nameEl);
+    createFancyText(surnameEl);
+  });
 </script>
 
-<section aria-labelledby="name">
+<section aria-labelledby="full-name">
   <main>
-    <h1 id="name">
-      <span id="name">Panos</span>
-      <span id="surname">Ntais</span>
+    <h1 id="full-name">
+      <span bind:this={nameEl} id="name" class="fancy-text">Panos</span>
+      <span bind:this={surnameEl} id="surname" class="fancy-text">Ntais</span>
     </h1>
 
     <img
@@ -29,7 +47,7 @@
     width: var(--section-width-desktop);
     margin: 100px auto 0 auto;
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     justify-content: space-between;
     align-items: center;
     max-width: 1800px;
@@ -45,7 +63,6 @@
 
   h1 {
     font-size: 6rem;
-    letter-spacing: 3px;
     font-weight: 900;
     scale: 1.2 1;
     font-family: "Allerta Stencil", sans-serif;
@@ -81,7 +98,7 @@
     opacity: 0.5;
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     main {
       margin-top: 60px;
       flex-direction: column;

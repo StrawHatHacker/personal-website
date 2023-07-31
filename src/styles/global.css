@@ -120,3 +120,30 @@ b {
     border-top: var(--border-radius-size) solid var(--color-secondary);
   }
 }
+
+.fancy-letter {
+  display: inline-block;
+  transition: transform 450ms ease-out;
+}
+
+.fancy-text:hover > .fancy-letter {
+  transition-duration: 1500ms;
+  transition-timing-function: cubic-bezier(0.2, -0.78, 0.4, 1.53);
+
+  &:nth-child(1) {
+    transform: translate(-30%, -15%) rotate(-8deg);
+  }
+  &:nth-child(2) {
+    transform: translate(-15%, 15%) rotate(-4deg);
+  }
+  &:nth-child(3) {
+    transform: translate(0%, -15%) rotate(0deg);
+  }
+  &:nth-child(4) {
+    transform: translate(15%, 15%) rotate(4deg);
+  }
+  &:nth-child(5) {
+    transform: translate(30%, -15%) rotate(8deg);
+  }
+}
+
