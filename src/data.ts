@@ -9,6 +9,7 @@ export type Project = {
     color: string;
     roundIcon: boolean;
     dateCreated: string;
+    imgs: { url: string, alt: string }[];
 }
 
 export const projects: Project[] = [
@@ -31,6 +32,13 @@ export const projects: Project[] = [
         color: '#1761e1',
         roundIcon: false,
         dateCreated: '2020 - now',
+        imgs: [{
+            url: '/otakuGIFs_1.png',
+            alt: 'otakugifs website landing page'
+        }, {
+            url: '/otakuGIFs_2.png',
+            alt: 'otakugifs api page'
+        }]
     },
     {
         name: "Kouhai",
@@ -50,6 +58,13 @@ export const projects: Project[] = [
         color: '#a63dcf',
         roundIcon: false,
         dateCreated: '2022 - now',
+        imgs: [{
+            url: '/kouhai_1.png',
+            alt: 'kouhai website landing page'
+        }, {
+            url: '/kouhai_2.png',
+            alt: 'kouhai audio player page'
+        }],
     },
     {
         name: "Shiro",
@@ -66,6 +81,15 @@ export const projects: Project[] = [
         color: '#e05477',
         roundIcon: true,
         dateCreated: '2018 - now',
+        imgs: [
+            {
+                url: '/shiro_2.png',
+                alt: 'shiro bot\'s help command'
+            }, {
+                url: '/shiro_1.png',
+                alt: 'shiro bot\'s config guild command'
+            }
+        ],
     },
     {
         name: "Nyx",
@@ -81,6 +105,19 @@ export const projects: Project[] = [
         color: '#6f6f6f',
         roundIcon: true,
         dateCreated: '2021 - now',
+        imgs: [
+            {
+                url: '/nyx_2.png',
+                alt: 'Nyx\'s welcome message'
+            },
+            {
+                url: '/nyx_1.png',
+                alt: 'Nyx\'s acheivement embed'
+            }, {
+                url: '/nyx_3.png',
+                alt: 'Nyx\'s xp leaderboard'
+            }
+        ],
     },
     {
         name: "Kuwai",
@@ -95,6 +132,14 @@ export const projects: Project[] = [
         color: '#dddafe',
         roundIcon: true,
         dateCreated: '2023',
+        imgs: [{
+            url: '/kuwai_1.png',
+            alt: 'Kuwai making conversation'
+        },
+        {
+            url: '/kuwai_2.png',
+            alt: 'Kuwai\'s first message prompting to read the terms of service'
+        }],
     },
     {
         name: "UsefulScripts",
@@ -107,5 +152,6 @@ export const projects: Project[] = [
         color: '#f4c224',
         roundIcon: true,
         dateCreated: '2020 - 2022',
+        imgs: [],
     },
 ];

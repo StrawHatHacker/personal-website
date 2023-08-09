@@ -26,17 +26,26 @@
         <ArrowLeft size={16} />
       </MainButtonLink>
     </div>
-    <div class="main-content">
-      <div class="information">
-        <p><b>{project.description}</b></p>
-        <p>{@html project.longDescription}</p>
+    <div class="card">
+      <div class="content">
+        <div class="information">
+          <p><b>{project.description}</b></p>
+          <p>{@html project.longDescription}</p>
+        </div>
+        <TechnologyList {project} />
+        {#if project.url}
+          <MainButtonLink href={project.url} text="Visit Site" newTab>
+            <ArrowUpRight size={16} />
+          </MainButtonLink>
+        {/if}
       </div>
-      <TechnologyList {project} />
-      {#if project.url}
-        <MainButtonLink href={project.url} text="Visit Site" newTab>
-          <ArrowUpRight size={16} />
-        </MainButtonLink>
-      {/if}
+      <div class="images">
+        {#each project.imgs as img}
+          <a href={img.url} target="_blank">
+            <img src={img.url} alt={img.alt} loading="lazy" />
+          </a>
+        {/each}
+      </div>
     </div>
   </article>
 </section>
@@ -48,16 +57,43 @@
   }
 
   p {
-    max-width: 60ch;
+    max-width: 50ch;
   }
 
-  .main-content {
+  .card {
     border-radius: 10px;
-    border: 2px solid white;
-    padding: 1rem;
+    margin: 1rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+
+    & > * {
+      flex: 1 1 0;
+    }
+  }
+
+  .content {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  .images {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: start;
+    align-items: end;
+    & img {
+      width: 100%;
+      max-width: 600px;
+      max-height: 500px;
+      border-radius: 8px;
+      transition: opacity 0.2s ease-in;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
   }
 
   .article-heading {
@@ -89,9 +125,24 @@
   .information {
     & > p {
       margin: 0 0 1em 0;
+
       &:last-child {
         margin: 0;
       }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .card {
+      flex-direction: column;
+    }
+
+    .images {
+      align-items: center;
+    }
+
+    .images img {
+      max-width: unset;
     }
   }
 
