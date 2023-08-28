@@ -15,6 +15,7 @@
 
 <style>
   .technologies {
+    margin: auto 0 0 0;
     & > .technology-list {
       display: flex;
       flex-wrap: wrap;

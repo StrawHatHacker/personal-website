@@ -34,7 +34,7 @@
 
 <svelte:window bind:innerWidth={screenWidth} />
 
-<Disclaimer />
+<!-- <Disclaimer /> -->
 
 {#if screenWidth < 750}
   <HeaderSmall />

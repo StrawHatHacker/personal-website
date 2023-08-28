@@ -43,7 +43,7 @@ export const projects: Project[] = [
     {
         name: "Kouhai",
         type: 'Website & API',
-        description: "Utilities for every day use. Includes 5 easy to use features that make life easier. Why use 5 different websites when Kouhai has a URL Shortener, file upload and editing and can take screenshots of websites for you?",
+        description: "Utilities for every day use. Includes 5 easy to use features that make life easier. Kouhai has a URL Shortener, file upload and editing and can take screenshots of websites for you.",
         longDescription: `Kouhai is a website that provides 5 utilities in 1 landing page. Utilities that I needed as a developer but I didn't want to go to 5 websites
         to find them. Those are a URL shortener, an audio recorder, file storage, simple image editor, website screenshoter.<br/><br/>
         All the utilies return a URL with which the user can access their resource and\\or share it online. The audio recorder uses the native MediaRecorder API, with a custom audio player.

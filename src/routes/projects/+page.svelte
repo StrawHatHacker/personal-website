@@ -92,11 +92,13 @@
 
   .project-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 
   .project-item {
+    flex: 1 1 300px;
+    min-width: 40%;
     border: 2px solid white;
     border-radius: 10px;
     padding: 1rem;
