@@ -104,7 +104,7 @@ export const projects: Project[] = [
         url: null,
         color: '#6f6f6f',
         roundIcon: true,
-        dateCreated: '2021 - now',
+        dateCreated: '2021 - 2023',
         imgs: [
             {
                 url: '/nyx_2.png',
@@ -131,7 +131,7 @@ export const projects: Project[] = [
         url: null,
         color: '#dddafe',
         roundIcon: true,
-        dateCreated: '2023',
+        dateCreated: '2023 - now',
         imgs: [{
             url: '/kuwai_1.png',
             alt: 'Kuwai making conversation'
